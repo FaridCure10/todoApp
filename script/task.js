@@ -38,7 +38,7 @@ window.addEventListener('load', function(){
             // cerrar sesion
             localStorage.clear();
             location.replace('/');
-            location.href = '/todoApp/'
+            location.href = 'https://faridcure10.github.io/projectJavaScript/'
           }
         })
     })

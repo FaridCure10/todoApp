@@ -64,6 +64,7 @@ function fetchApiLogin(url,payload){
     fetch(url, configuraciones)
     .then(Response => Response.json())
     .then( data => {
+        console.log(data)
         ocultarSpinner();
         if(data.jwt){
             localStorage.setItem('jwt', data.jwt);

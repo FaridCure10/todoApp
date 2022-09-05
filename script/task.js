@@ -16,6 +16,7 @@ window.addEventListener('load', function(){
     const jwt = localStorage.getItem('jwt')
 
     const nodoNombreUsuario = document.querySelector('.user-info p');
+    const nodoLogoUsuario = document.querySelector('.user-image');
     const nodoFormulario = document.querySelector('.nueva-tarea');
     const inputNuevaTarea = document.querySelector('#nuevaTarea');
     const btnCerrar = document.querySelector('#closeApp');
@@ -234,6 +235,7 @@ window.addEventListener('load', function(){
             .then(data => {
                 console.log(data);
                 nodoNombreUsuario.innerText = data.firstName;
+                nodoLogoUsuario.innerText = data.firstName[0]
             })
     }
 });

@@ -38,6 +38,7 @@ window.addEventListener('load', function(){
             // cerrar sesion
             localStorage.clear();
             location.replace('/');
+            location.href = '../index.html'
           }
         })
     })
